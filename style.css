@@ -1,0 +1,75 @@
+body {
+    background: rgb(173, 18, 140);
+}
+
+.chess-title h1 { 
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 72px;
+    margin: 24px 0 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.chess-table {
+    padding-block-start: 7.5%;
+    max-inline-size: 80%;
+    margin: auto;
+}
+
+.chess-table table {
+    border-spacing: 0;
+    margin: auto;
+    box-shadow: 0px 1px 0px rgba(17,17,26,0.5), 0px 8px 24px rgba(17,17,26,0.5), 0px 16px 48px rgba(17,17,26,0.5);
+}
+
+.chess-table tr:nth-child(odd) td:nth-child(odd) {
+    background: rgba(0, 0, 0, 1);
+}
+
+.chess-table tr:nth-child(odd) td:nth-child(even) {
+    background: rgba(255, 255, 255, 1);
+}
+
+.chess-table tr:nth-child(even)  td:nth-child(even){
+    background: rgba(0, 0, 0, 1);
+}
+
+.chess-table tr:nth-child(even)  td:nth-child(odd){
+    background: rgba(255, 255, 255, 1);
+}
+
+.fas {
+    font-size: 250%;
+    color: rgb(204, 238, 9);
+}
+
+.fas.dark {
+    color: rgb(228, 67, 4);
+}
+
+.chess-table td {
+    padding: 0%;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+}
+
+@media  (max-width: 652px) {
+    .chess-table {
+        max-inline-size: 80%;
+    }
+
+    .chess-table td {
+        padding: 0%;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+    }
+
+    .fas {
+        font-size: 100%;
+    }
+}
